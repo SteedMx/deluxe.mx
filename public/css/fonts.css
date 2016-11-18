@@ -1,0 +1,31 @@
+/* Apple Casual Regular*/
+@font-face {
+    font-family: 'code';
+    src: url('/assets/fonts/code_light.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Lato Hairline*/
+@font-face {
+    font-family: 'lato';
+    src: url('/assets/fonts/lato/Lato-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Lato Hairline*/
+@font-face {
+    font-family: 'lato';
+    src: url('/assets/fonts/lato/Lato-Hairline.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Lato Italic*/
+@font-face {
+    font-family: 'lato';
+    src: url('/assets/fonts/lato/Lato-Italic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}

@@ -1,0 +1,639 @@
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'lato', sans-serif;
+  font-weight: 100; 
+  font-size: 50px;
+  text-align: center;
+  color:  #D5AD6D; /*if no support for background-clip*/
+  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+  PARALLAX SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: #1e1e1e;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+}
+
+/* ORIGINAL PARALLAX BACKGROUNDS !REMOVE
+section.module.parallax-1 {
+  background-image: url('/images/back_hero.png');
+}
+section.module.parallax-2 {
+  background-image: url('/images/mountain.png');
+  background-size: contain;
+}
+section.module.parallax-3 {
+  background-image: url('/images/mountain.png');
+}
+*/
+
+.intro-unit {
+  /* The image used */
+  background: #000;
+
+  /* Set a specific height
+  height: 500px; 
+  */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#services {
+  background-color: #000;
+}
+
+.services-unit {
+  /* Set a specific height */
+  height: 500px; 
+  background-color: #000;
+}
+
+.seven-cols {
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+.staff-first-name {
+  margin-top: 10px;
+  font-family: 'lato';
+  font-size: large;
+  font-weight: 100;
+}
+
+.staff-second-name {
+  font-family: 'lato';
+  font-style: italic;
+  font-size: large;
+  font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+/* 14% = 100% (full-width row) divided by 7 */
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax {
+    padding: 300px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+/* Aqui acaba la prueba de parallax */
+
+/* Non-media specific */
+
+html, body {
+  font-family: "code", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+  cursor: pointer;
+}
+
+.gallery-home {
+  width: 100%;
+  height: 72px;
+  text-align: center;
+  background: url(/images/patron.png) repeat center top;
+  background-color: #000;
+}
+
+/* SECTION BLACK */
+#sectionblack {
+  text-align: center;
+}
+
+.sectionblack .title p {
+  font-family: 'lato';
+  font-weight: 100;
+  font-size: 3em;
+  color: white;
+}
+
+#home-hero {
+}
+
+.hero-unit {
+  height: 105vh;
+  position: relative;
+  background-image: url('/images/back_hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-unit img {
+  position: absolute;
+  height: 80vh;
+  top: 15vh;
+  right: 20vw;
+}
+
+#home-intro {
+  text-align: center;
+}
+
+.intro-unit .row {
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  text-align: center;
+}
+
+.intro-unit img {
+  width: 100%;
+}
+
+.intro-unit h1 {
+  text-align: center;
+  color: #FFF;
+  font-family: 'lato';
+  font-size: 8rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.intro-unit p {
+  margin: 20px;
+  color: #FFF;
+  font-family: 'lato';
+  font-style: italic;
+  font-size: 20px;
+}
+
+.contact-unit {
+  background-color: #000;
+}
+
+.contact-unit .row {
+  position: relative;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-align-text a {
+  color: #000;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#job-openings {
+  display: none;
+}
+
+#job-openings h1 {
+  padding-bottom: 5vh;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#job-openings a {
+  color: #000; 
+}
+
+.contact-unit h1 {
+  color: #000; 
+}
+
+.contact-unit form {
+  margin-top: 30px;
+  margin-left: 50vw;
+}
+
+.contact-unit input {
+  background-color: #000;
+  border: 2px solid;
+  border-color: #D5AD6D;
+  width: 438px;
+  padding: 10px;
+}
+
+.contact-unit textarea {
+  background-color: #000;
+  border: 2px solid;
+  border-color: #D5AD6D;
+  padding: 10px;
+}
+
+#home-carousel {
+  /*
+  background-image: url('/images/bg-carousel.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
+  background-color: #FFF;
+}
+
+#home-pricing {
+  background-color: #000;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+#myCarousel {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Huge desktop */
+@media (min-width: 1650px) {
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 9rem;
+    color: #000;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+  }
+
+  .hero-unit .apple {
+    width: 222px;
+    position: absolute;
+    top: 80vh;
+    left: 15vw;
+  }
+
+  .hero-unit .google {
+    width: 222px;
+    position: absolute;
+    top: 80vh;
+    left: 30vw;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) and (max-width: 1649px) {
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 10vw;
+    color: #000;
+    position: absolute;
+    top: 15vh;
+    left: 10%;
+  }
+
+  .hero-unit .apple {
+    width: 222px;
+    position: absolute;
+    top: 515px;
+    left: 10%;
+  }
+
+  .hero-unit .google {
+    width: 222px;
+    position: absolute;
+    top: 515px;
+    left: 27%;
+  }
+}
+
+/* Small desktop */
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 10vw;
+    color: #000;
+    position: absolute;
+    bottom: 33vh;
+    left: 10%;
+  }
+
+  .hero-unit .apple {
+    width: 20vh;
+    position: absolute;
+    bottom: 21vh;
+    left: 10%;
+  }
+
+  .hero-unit .google {
+    width: 20vh;
+    position: absolute;
+    bottom: 21vh;
+    left: 27%;
+  }
+
+  
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .hero-unit img {
+    height: 55vh;
+  }
+
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 10vw;
+    color: #000;
+    position: absolute;
+    bottom: 17vh;
+    left: 10%;
+  }
+
+  .hero-unit .apple {
+    width: 25vw;
+    position: absolute;
+    bottom: 9vh;
+    left: 10vw;
+  }
+
+  .hero-unit .google {
+    width: 25vw;
+    position: absolute;
+    bottom: 9vh;
+    left: 37vw;
+  }
+
+  .bottom-align-text {
+    display: none;
+  }
+
+  #job-openings {
+    display: block;
+  }
+
+  #job-openings h1 {
+    padding-bottom: 5vh;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) and (max-width: 979px) and (max-height: 1024px) {
+
+  .hero-unit img {
+    height: 60vh;
+    top: 10vh;
+    right: 36vw;
+  }
+
+  .contact-unit form {
+    margin-top: 30px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+}
+
+/* Portrait phone */
+@media (min-width: 540px) and (max-width: 768px) and (min-height: 320px) and (max-height: 420px) {
+
+  .contact-unit form {
+    margin-top: 30px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+  
+  .bottom-align-text {
+    display: none;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 10vw;
+    color: #000;
+    position: absolute;
+    top: 15vh;
+    left: 10%;
+  }
+
+  .hero-unit .apple {
+    width: 20vw;
+    position: absolute;
+    bottom: 20vh;
+    left: 10vw;
+  }
+
+  .hero-unit .google {
+    width: 20vw;
+    position: absolute;
+    bottom: 20vh;
+    left: 32vw;
+  }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .hero-unit img {
+    position: absolute;
+    height: 55vh;
+    top: 15vh;
+    left: 30vw;
+  }
+
+  .hero-unit h1 {
+    text-align: left;
+    font-family: 'lato';
+    font-weight: 100;
+    font-size: 12vw;
+    color: #000;
+    position: absolute;
+    bottom: 19vh;
+    left: 10%;
+  }
+
+  .hero-unit .apple {
+    width: 40vw;
+    position: absolute;
+    bottom: 10vh;
+    left: 9vw;
+  }
+
+  .hero-unit .google {
+    width: 40vw;
+    position: absolute;
+    bottom: 10vh;
+    right: 9vw;
+  }
+
+  .intro-unit {
+    height: 140vh;
+  }
+
+  .intro-unit .row {
+    margin-top: 0;
+    width: 85%;
+  }
+
+  .howitworks__column {
+    padding-top: 5vh;
+  }
+
+  .seven-cols {
+    margin: 50px 0 50px 0;
+    text-align: center;
+  }
+
+  .staff-second-name {
+    margin-bottom: 20px;
+  }
+
+  .last__service {
+    margin-left: 25vw;
+  }
+
+  .bottom-align-text {
+    display: none;
+  }
+
+  #job-openings {
+    display: block;
+  }
+
+  .contact-unit h1 {
+    color: #000; 
+  }
+
+  .contact-unit form {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .contact-unit input {
+    background-color: #FFF;
+    border: 2px solid;
+    width: 90vw;
+    margin: 0 0 0 20px;
+  }
+
+  .contact-unit textarea {
+    width: 90vw;
+    background-color: #FFF;
+    border: 2px solid;
+    margin: 0 20px 0 20px;
+  }
+
+}
+
+/* How-it-works section fix for phones with small screens */
+@media (max-height: 667px) {
+
+  .intro-unit {
+    height: 210vh;
+  }
+
+}
+
+/* ============================================================
+  FOOTER STYLES
+============================================================ */
+footer {
+  font-family: 'lato';
+  font-weight: 200;
+  font-size: large;
+  background-color: #000;
+  color: #FFF;
+}
+
+footer div {
+  margin-left: 110px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  footer div {
+    margin-left: 5vw;
+  }
+}

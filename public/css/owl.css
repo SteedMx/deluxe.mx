@@ -1,0 +1,47 @@
+/* ==========================================================================
+    OWL REEL
+========================================================================== */
+.btn-wlb{
+    background-color: rgba(22, 12, 67, 0.63);
+    font-size: xx-large;
+    height: 65px;
+    line-height: 50px;
+}
+
+.btn-wlb:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.owl-carousel .owl-item img {
+    height: 596px;
+    width: 306px;
+    display: block;
+}
+
+.owl-carousel .item {
+    margin:0px;
+}
+
+/* GALLERY HOME */
+
+.owl-carousel .item{
+    height: 595px;
+}
+.gallery-control-wrapper{
+    position: relative;
+}
+.gallery-control{
+    position: absolute;
+    top: -333px;
+    z-index: 999;
+}
+.gallery-control-wrapper .right{
+    right: 30px;
+}
+.gallery-control-wrapper .left{
+    left: 30px;
+}
+
+.owl-stage-outer{
+    border: none;
+}
