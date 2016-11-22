@@ -362,14 +362,14 @@ html, body {
 /* Large desktop */
 @media (min-width: 1200px) and (max-width: 1649px) {
   .hero-unit h1 {
-    text-align: left;
     font-family: 'lato';
     font-weight: 100;
-    font-size: 10vw;
+    font-size: 8vw;
     color: #000;
     position: absolute;
-    top: 15vh;
-    left: 10%;
+    bottom: 10vh;
+    left: 60vw;
+    text-align: right;
   }
 
   .hero-unit .apple {
