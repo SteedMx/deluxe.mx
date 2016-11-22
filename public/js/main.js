@@ -306,7 +306,6 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
             // Custom Navigation Events
             $(".nextOwl").click(function(){
                 owl.trigger('next.owl.carousel');
-                console.log("TEST PLAT");
             });
             $(".prevOwl").click(function(){
                 owl.trigger('prev.owl.carousel');
