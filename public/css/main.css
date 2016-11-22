@@ -91,14 +91,6 @@ section.module.parallax-3 {
   padding: 40px 0;
 }
 
-#be__deluxe {
-  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-  color: black !important;
-  font-size: 0.8em;
-  vertical-align: super;
-  bottom: 3px;
-}
-
 #services {
   background-color: #000;
 }
@@ -155,6 +147,14 @@ section.module.parallax-3 {
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 160px;
+  }
+
+  #be__deluxe {
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    color: black !important;
+    font-size: 0.8em;
+    vertical-align: super;
+    bottom: 3px;
   }
 }
 
@@ -341,6 +341,14 @@ html, body {
 
 /* Huge desktop */
 @media (min-width: 1650px) {
+  #be__deluxe {
+    background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    color: black !important;
+    font-size: 0.8em;
+    vertical-align: super;
+    bottom: 3px;
+  }
+
   .hero-unit h1 {
     text-align: left;
     font-family: 'lato';
@@ -647,9 +655,8 @@ html, body {
 
 /* How-it-works section fix for phones with small screens */
 @media (max-height: 667px) {
-
-  .intro-unit {
-    height: 210vh;
+  .intro-unit img {
+      width: 100%;
   }
 
 }
