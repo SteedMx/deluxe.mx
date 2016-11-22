@@ -147,7 +147,9 @@ section.module.parallax-3 {
 }
 
 /* Aqui acaba la prueba de parallax */
-
+#iphone:hover {
+  content:url("/images/iphone_left.png");
+}
 
 /* Non-media specific */
 
