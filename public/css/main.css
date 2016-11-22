@@ -293,11 +293,21 @@ html, body {
   padding: 10px;
 }
 
+.contact-unit input[type="submit"] {
+  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  border: 2px solid;
+  width: 438px;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 .contact-unit textarea {
   background-color: #000;
   border: 2px solid;
   border-color: #D5AD6D;
   padding: 10px;
+  width: 54vw;
 }
 
 #home-carousel {
@@ -471,6 +481,7 @@ html, body {
     margin-top: 30px;
     margin-left: 25vw;
     margin-right: 25vw;
+    margin-bottom: 30px;
   }
 
 }
