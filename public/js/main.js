@@ -84,8 +84,8 @@ app.service('anchorSmoothScroll', function(){
 /**
  * Is the Navbar controller
  */
-function HeaderController($scope, $location, anchorSmoothScroll) 
-{ 
+function HeaderController($scope, $location, anchorSmoothScroll)
+{
 
     $scope.gotoElement = function (eID) {
 
@@ -101,26 +101,26 @@ function HeaderController($scope, $location, anchorSmoothScroll)
 
     /*-----------------------------------------------------*/
     /* Mobile Menu
-       ------------------------------------------------------ */  
+       ------------------------------------------------------ */
     var menu_icon = $("<span class='menu-icon'>Menu</span>");
-    var toggle_button = $("<a>", {                         
-        id: "toggle-btn", 
+    var toggle_button = $("<a>", {
+        id: "toggle-btn",
         html : "",
         title: "Menu",
         href : "#" });
 
         var nav_wrap = $('nav#nav-wrap')
-        var nav = $("ul#nav");  
+        var nav = $("ul#nav");
 
-        /* if JS is enabled, remove the two a.mobile-btns 
+        /* if JS is enabled, remove the two a.mobile-btns
            and dynamically prepend a.toggle-btn to #nav-wrap */
-        nav_wrap.find('a.mobile-btn').remove(); 
-        toggle_button.append(menu_icon); 
-        nav_wrap.prepend(toggle_button); 
+        nav_wrap.find('a.mobile-btn').remove();
+        toggle_button.append(menu_icon);
+        nav_wrap.prepend(toggle_button);
 
         toggle_button.on("click", function(e) {
             e.preventDefault();
-            nav.slideToggle("fast");     
+            nav.slideToggle("fast");
         });
 
         if (toggle_button.is(':visible')) nav.addClass('mobile');
@@ -129,8 +129,8 @@ function HeaderController($scope, $location, anchorSmoothScroll)
             else nav.removeClass('mobile');
         });
 
-        $('ul#nav li a').on("click", function() {      
-            if (nav.hasClass('mobile')) nav.fadeOut('fast');      
+        $('ul#nav li a').on("click", function() {
+            if (nav.hasClass('mobile')) nav.fadeOut('fast');
         });
 }
 
@@ -167,6 +167,26 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
     })();
 
     /*----------------------------------------------------*/
+    /* Switch carousel images on service click
+       ------------------------------------------------------*/
+     $('#cs-haircuts').click(function() {imageSwitcher("cs-haircuts");});
+     $('#cs-hairstyles').click(function() {imageSwitcher("cs-hairstyles");});
+     $('#cs-hair-treatments').click(function() {imageSwitcher("cs-hair-treatments");});
+     $('#cs-makeups').click(function() {imageSwitcher("cs-makeups");});
+     $('#cs-manicures').click(function() {imageSwitcher("cs-manicures");});
+     $('#cs-pedicures').click(function() {imageSwitcher("cs-pedicures");});
+     $('#cs-beards').click(function() {imageSwitcher("cs-beards");});
+
+     // Change the carousel images depending on the service name
+     function imageSwitcher(service) {
+       var images = $('.item-img');
+       for (i = 0; i <= images.length; i++) {
+         var newUrl = "/images/" + service + "-" + i + ".png";
+         images[i].src = newUrl;
+       };
+     }
+
+    /*----------------------------------------------------*/
     /* Adjust Primary Navigation Background Opacity
        ------------------------------------------------------*/
     $(window).on('scroll', function() {
@@ -176,7 +196,7 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
         var header = $('#main-header');
 
         if ((y > h + 30 ) && ($(window).outerWidth() > 768 ) ) {
-            header.addClass('opaque');	      
+            header.addClass('opaque');
         }
         else {
             if (y < h + 30) {
@@ -193,7 +213,7 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
     /* Highlight the current section in the navigation bar
        ------------------------------------------------------*/
     var sections = $("section"),
-        navigation_links = $("#nav-wrap a");	
+        navigation_links = $("#nav-wrap a");
 
         sections.waypoint( {
 
@@ -205,12 +225,12 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
 
                 if (direction === "up") active_section = active_section.prev();
 
-                var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+                var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
                 navigation_links.parent().removeClass("current");
                 active_link.parent().addClass("current");
 
-            }, 
+            },
 
             offset: '25%'
 
@@ -233,7 +253,7 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
                     window.location.hash = target;
                 });
 
-        });  
+        });
 
 
         /*----------------------------------------------------*/
@@ -270,8 +290,8 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
                     $('.owl-carousel .item').css('height',250+'px');
                 });
                 $('.owl-wrapper-outer').css('height',minHeight+'px');
-            }    
-            
+            }
+
             function scrollToTop(test){
 
                 $("html, body").animate({
@@ -279,7 +299,7 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
                 }, "slow");
 
             };
-            
+
             var owl = $('.owl-carousel');
 
             // Custom Navigation Events
@@ -291,11 +311,11 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
                 owl.trigger('prev.owl.carousel');
             });
 
-            owl.owlCarousel({  
+            owl.owlCarousel({
                 margin:0,
                 loop:true,
                 items:3,
-                autoWidth:true    
+                autoWidth:true
             });
 
             function setMinHeight(){
