@@ -222,7 +222,7 @@ html, body {
 }
 
 .intro-unit img {
-  width: 100%;
+  width: 20vw;
 }
 
 .intro-unit h1 {
@@ -307,7 +307,7 @@ html, body {
   border: 2px solid;
   border-color: #D5AD6D;
   padding: 10px;
-  width: 54vw;
+  width: 438px;
 }
 
 #home-carousel {
@@ -433,8 +433,9 @@ html, body {
     font-size: 10vw;
     color: #000;
     position: absolute;
-    bottom: 17vh;
-    left: 10%;
+    bottom: 6vh;
+    text-align: right;
+    right: 6vw;
   }
 
   .hero-unit .apple {
