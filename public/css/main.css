@@ -75,6 +75,11 @@ section.module.parallax-3 {
 }
 */
 
+.btn-wlb {
+  background-color: rgba(0, 0, 0, 0.63) !important;
+  color: #fff6ad !important;
+}
+
 .intro-unit {
   /* The image used */
   background: #000;
