@@ -12,7 +12,7 @@ img {
 
 h1 {
   font-family: 'lato', sans-serif;
-  font-weight: 100; 
+  font-weight: 100;
   font-size: 50px;
   text-align: center;
   color:  #D5AD6D; /*if no support for background-clip*/
@@ -76,7 +76,7 @@ section.module.parallax-3 {
   background: #000;
 
   /* Set a specific height
-  height: 500px; 
+  height: 500px;
   */
 
   /* Create the parallax scrolling effect */
@@ -93,7 +93,7 @@ section.module.parallax-3 {
 
 .services-unit {
   /* Set a specific height */
-  height: 500px; 
+  height: 500px;
   background-color: #000;
 }
 
@@ -147,6 +147,7 @@ section.module.parallax-3 {
 }
 
 /* Aqui acaba la prueba de parallax */
+
 
 /* Non-media specific */
 
@@ -266,11 +267,11 @@ html, body {
 }
 
 #job-openings a {
-  color: #000; 
+  color: #000;
 }
 
 .contact-unit h1 {
-  color: #000; 
+  color: #000;
 }
 
 .contact-unit form {
@@ -398,7 +399,7 @@ html, body {
     left: 27%;
   }
 
-  
+
 
 }
 
@@ -476,7 +477,7 @@ html, body {
     margin-left: 25vw;
     margin-right: 25vw;
   }
-  
+
   .bottom-align-text {
     display: none;
   }
@@ -530,8 +531,9 @@ html, body {
     font-size: 12vw;
     color: #000;
     position: absolute;
-    bottom: 19vh;
-    left: 10%;
+    bottom: 5vh;
+    text-align: right;
+    right: 4vw;
   }
 
   .hero-unit .apple {
@@ -583,7 +585,7 @@ html, body {
   }
 
   .contact-unit h1 {
-    color: #000; 
+    color: #000;
   }
 
   .contact-unit form {

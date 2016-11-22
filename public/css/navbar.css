@@ -1,4 +1,4 @@
-/** 
+/**
 /* header styles
 /* =================================================================== */
 
@@ -13,7 +13,7 @@ header {
 	-o-transition: all 0.5s ease-in-out;
 	-webkit-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;  
+	transition: all 0.5s ease-in-out;
 }
 
 header.opaque {
@@ -37,9 +37,9 @@ header .logo {
 	width: auto;
 	margin-top: 15px;
   margin-left: 10%;
-	z-index: 600;    
-	
-	/* add position relative since z-index only applies to  
+	z-index: 600;
+
+	/* add position relative since z-index only applies to
 	elements that have been given an explicit position */
 	position: relative;
 }
@@ -85,7 +85,7 @@ header .header-social li a:hover {
     color: #24A3BF;
 }
 
-/* media queries:  
+/* media queries:
 /* header/header components */
 @media only screen and (max-width:880px) {
     header .header-social {
@@ -124,7 +124,7 @@ header .header-social li a:hover {
 	font: 16px "code", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	float: right;  
+	float: right;
   margin: 35px 5% 0 0;
 }
 
@@ -136,7 +136,7 @@ header .header-social li a:hover {
 ul#nav {
 	min-height: 66px;
 	display: inline-block;
-	width: auto;  
+	width: auto;
 
 	/* left align the menu */
 	text-align: left;
@@ -207,7 +207,7 @@ ul#nav li.current a:after {
 	transition: all 0.3s ease-in-out;
 }
 
-/* mobile navigation 
+/* mobile navigation
 --------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 
@@ -225,6 +225,7 @@ ul#nav li.current a:after {
 		top: 0;
 		right: 0;
     margin-right: 0;
+		margin-top:0;
 	}
 
 	/* mobile-btn and toggle-btn */
@@ -361,4 +362,3 @@ ul#nav li.current a:after {
 	}
 
 }
-
