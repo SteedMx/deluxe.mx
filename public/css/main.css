@@ -681,6 +681,11 @@ footer div {
   margin-left: 110px;
 }
 
+footer > a {
+  margin-top:10px;
+  color: white;
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
   footer div {
