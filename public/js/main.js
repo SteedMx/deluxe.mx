@@ -181,7 +181,8 @@ app.controller('MainPageCtrl', function($scope, $location, $http, anchorSmoothSc
      function imageSwitcher(service) {
        var images = $('.item-img');
        for (i = 0; i <= images.length; i++) {
-         var newUrl = "/images/" + service + "-" + i + ".png";
+         // The 'i - 2' is because of how Owl generates the carousel
+         var newUrl = "/images/" + service + "-" + (i - 2) + ".png";
          images[i].src = newUrl;
        };
      }
