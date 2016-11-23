@@ -257,6 +257,7 @@ html, body {
 
 .contact-unit {
   background-color: #000;
+  padding-bottom:2em;
 }
 
 .contact-unit .row {
@@ -673,17 +674,49 @@ footer {
   font-family: 'lato';
   font-weight: 200;
   font-size: large;
-  background-color: #000;
+  background-color: rgb(60, 60, 60);
   color: #FFF;
 }
 
 footer div {
   margin-left: 110px;
+  display:flex;
+  flex-flow:row;
 }
 
-footer > a {
-  margin-top:10px;
-  color: white;
+footer > div > p > a {
+  margin-top:30px;
+  color: white !important;
+  font-size:0.9em;
+  padding:0.5em;
+}
+
+#footer-social-icons {
+  display:flex;
+  flex-flow:row;
+  flex-grow:2;
+}
+
+#footer-copy {
+  display:flex;
+  flex-flow:column;
+  color:#b7b7b7;
+  font-size:0.4em;
+}
+
+#footer-social-icons > a > i {
+  margin:0.5em;
+  margin-top:1em;
+  color:#c3b075;
+}
+
+footer > div > p > a:hover {
+  text-decoration:none;
+}
+
+footer > div > p {
+  display:block;
+  margin-top:1em;
 }
 
 /* Landscape phones and down */
