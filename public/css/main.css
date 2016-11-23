@@ -493,6 +493,11 @@ html, body {
 
 /* Portrait tablet */
 @media (min-width: 768px) and (max-width: 979px) and (max-height: 1024px) {
+  footer div {
+    margin-left: 110px;
+    display:flex;
+    flex-flow:column;
+  }
 
   .hero-unit img {
     height: 60vh;
@@ -511,6 +516,11 @@ html, body {
 
 /* Portrait phone */
 @media (min-width: 540px) and (max-width: 768px) and (min-height: 320px) and (max-height: 420px) {
+  footer div {
+    margin-left: 110px;
+    display:flex;
+    flex-flow:column;
+  }
 
   .contact-unit form {
     margin-top: 30px;
@@ -724,5 +734,34 @@ footer > div > p {
   footer div {
     margin-left: 5vw;
     font-size: 0.7em;
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+  }
+
+  #footer-social-icons > a > i {
+    font-size:40px;
+  }
+
+  #footer-social-icons{
+    margin-left: 18vw;
+  }
+}
+
+/* Portrait phone */
+@media (min-width: 540px) and (max-width: 768px) and (min-height: 320px) and (max-height: 420px) {
+  footer div {
+    margin-left: 110px;
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+  }
+
+  #footer-social-icons > a > i {
+    font-size:40px;
+  }
+
+  #footer-social-icons{
+    margin-left: 18vw;
   }
 }
