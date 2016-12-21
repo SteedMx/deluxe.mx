@@ -82,7 +82,8 @@ section.module.parallax-3 {
 
 .intro-unit {
   /* The image used */
-  background: #000;
+  background-image: url('/images/intro_unit_bg.png');
+  background-color: #000;
 
   /* Set a specific height
   height: 500px;
@@ -98,6 +99,7 @@ section.module.parallax-3 {
 
 #services {
   background-color: #000;
+  padding: 5%;
 }
 
 .services-unit {
@@ -112,10 +114,17 @@ section.module.parallax-3 {
 }
 
 .staff-first-name {
-  margin-top: 10px;
+  margin: 50px 0 50px 0;
   font-family: 'lato';
   font-size: large;
   font-weight: 100;
+  text-align: center;
+  color: #D5AD6D;
+  background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .staff-second-name {
