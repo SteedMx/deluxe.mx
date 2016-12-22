@@ -395,6 +395,14 @@ html, body {
   padding-bottom: 50px;
 }
 
+#home-pricing .container {
+  padding: 0 100px 0 100px;
+}
+
+#home-pricing img {
+  max-width: 90%;
+}
+
 #myCarousel {
   width: 70%;
   margin-left: auto;
