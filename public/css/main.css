@@ -26,6 +26,15 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h2 {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  color:  #b59b1c;
+}
+
+
 /* ============================================================
   PARALLAX SECTIONS
 ============================================================ */
@@ -340,6 +349,44 @@ html, body {
   background-repeat: no-repeat;
   */
   background-color: #FFF;
+}
+
+#home-appointments {
+  padding: 5%;
+  background-color: #000;
+}
+
+#home-appointments p {
+  font-size: 20px;
+  color: #4c4c4c;
+}
+
+#home-appointments .appointments__text__left {
+  text-align: right;
+}
+
+#home-appointments .appointments__text__left h2 {
+  text-align: right;
+}
+
+#home-appointments .appointments__text__middle {
+  background-image: url(/images/deluxe_diamond.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 234px;
+}
+
+#home-appointments .appointments__text__middle h1 { 
+  margin-top: 80px;
+}
+
+#home-appointments .appointments__text__right {
+  text-align: left;
+}
+
+#home-appointments .appointments__text__right h2 {
+  text-align: left;
 }
 
 #home-pricing {

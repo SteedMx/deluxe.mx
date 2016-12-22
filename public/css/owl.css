@@ -13,8 +13,9 @@
 }
 
 .owl-carousel .owl-item img {
-    height: 596px;
-    width: 306px;
+    /*
+    height: 596px;*/
+    width: 300px;
     display: block;
 }
 
@@ -25,7 +26,7 @@
 /* GALLERY HOME */
 
 .owl-carousel .item{
-    height: 595px;
+    height: 300px;
 }
 .gallery-control-wrapper{
     position: relative;
