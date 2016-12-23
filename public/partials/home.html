@@ -229,7 +229,9 @@
     <div class="form-text">
       <p>Llena el formulario y nos pondremos en contacto para realizar una entrevista y puedas ser parte de nuestros profesionales.</p>
     </div>
-    <a href="#" class="btn-contact" data-toggle="modal" data-target="#contactModal">APLICA</a>
+    <button type="button" id="contactmodal" class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#contactModal">
+      APLICA
+    </button>
   </div>
 </section> <!-- end homepage contact form -->
 
@@ -242,3 +244,79 @@
     </div>
 
 </section> <!-- end mobile job openings -->
+
+<!-- Be Deluxe modal
+   ================================================== -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+
+      <!--
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="contactModalLabel">Modal title</h4>
+      </div>-->
+      
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <div class="row modal-rightside">
+          <div class="col-md-6 flush-right">
+            <img src="/images/logo.png">
+            <p>necesita </p><p>profesionales </p><p>como tú</p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="names" placeholder="Nombres">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="lastnames" placeholder="Apellidos">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="mobile" placeholder="Celular">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="mobile" placeholder="Celular">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="gender" name="gender">
+                  <option selected disabled>Género</option>
+                  <option value="volvo">Femenino</option>
+                  <option value="saab">Masculino</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="didyouhear" placeholder="¿Cómo conociste DELUXE?">
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <input type="text" class="form-control" id="city" placeholder="Ciudad">
+                </div>
+                <div class="form-group col-md-4">
+                  <input type="text" class="form-control" id="cp" placeholder="C.P.">
+                </div>
+              </div>
+
+              <div class="checkbox">
+                <label><input type="checkbox"> Acepto los términos y condiciones</label>
+              </div>
+              <button type="submit" class="btn btn-default">APLICA</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+
+    </div>
+  </div>
+</div>

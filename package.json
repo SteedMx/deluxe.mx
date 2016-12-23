@@ -1,34 +1,31 @@
- {
-      "name": "deluxe.mx",
-      "main": "deluxe.js",
-      "version": "0.2.0",
-      "description": "Website for Deluxe App Available for iOS and Android",
-      "keywords": [
-        "website",
-        "steed",
-        "deluxe"
-      ],
-      "author": "Matias Gianesini <matias@steed.mx>",
-      "license": "ISC",
-
-      "dependencies": {
-        "express" : "~4.5.1",
-        "mongoose" : "~3.8.0",
-        "bson": "latest",
-        "body-parser" : "~1.4.2",
-        "method-override" : "~2.0.2"        
-      },
-
-      "engines": {
-        "node": ">=6.0.0"
-      },
-      "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SteedMx/deluxe.mx.git"
-      },
-      "bugs": {
-        "url": "https://github.com/SteedMx/deluxe.mx/issues"
-      },
-      "homepage": "https://github.com/SteedMx/deluxe.mx#readme"
-
-    }
+{
+  "name": "deluxe.mx",
+  "main": "deluxe.js",
+  "version": "0.2.0",
+  "description": "Website for Deluxe App Available for iOS and Android",
+  "keywords": [
+    "website",
+    "steed",
+    "deluxe"
+  ],
+  "author": "Matias Gianesini <matias@steed.mx>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "bson": "latest",
+    "express": "~4.5.1",
+    "method-override": "~2.0.2",
+    "mongoose": "~3.8.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteedMx/deluxe.mx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SteedMx/deluxe.mx/issues"
+  },
+  "homepage": "https://github.com/SteedMx/deluxe.mx#readme"
+}

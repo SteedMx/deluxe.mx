@@ -29,3 +29,43 @@
     font-weight: 100;
     font-style: italic;
 }
+
+/* Raleway Regular*/
+@font-face {
+    font-family: 'raleway';
+    src: url('/assets/fonts/raleway/Raleway-Regular.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Raleway Medium*/
+@font-face {
+    font-family: 'raleway';
+    src: url('/assets/fonts/raleway/Raleway-Medium.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Raleway Bold*/
+@font-face {
+    font-family: 'raleway';
+    src: url('/assets/fonts/raleway/Raleway-Bold.ttf');
+    font-weight: 300;
+    font-style: bold;
+}
+
+/* Raleway Light*/
+@font-face {
+    font-family: 'raleway';
+    src: url('/assets/fonts/raleway/Raleway-Light.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Raleway Thin*/
+@font-face {
+    font-family: 'raleway';
+    src: url('/assets/fonts/raleway/Raleway-Thin.ttf');
+    font-weight: 500;
+    font-style: normal;
+}

@@ -2,7 +2,7 @@
  * Main AngularJS Web Application
  */
 
-var app = angular.module('quiquiriqui', [
+var app = angular.module('deluxe.mx', [
     'ngRoute'
 ]);
 
